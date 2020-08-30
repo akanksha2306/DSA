@@ -7,21 +7,9 @@ public class knapsackTopDown {
 
 
         int[][] dp = new int[n + 1][W + 1];
-        //fill the dp with -1
 
-//        for (int[] row : dp)
-//            Arrays.fill(row, -1);
-
-        //base condition-thin of the smallest valid input
-//        if (n == 0 || W == 0) {
-//            return 0;
-//        }
-//        if(dp[n][W] != -1){
-//            return dp[n][W];
-//        }
-
-        for (int i = 0; i < n+1; i++) {
-            for (int j = 0; j < W+1; j++) {
+        for (int i = 0; i < n + 1; i++) {
+            for (int j = 0; j < W + 1; j++) {
                 if (i == 0 || j == 0) {
                     dp[i][j] = 0;
                 }
@@ -37,23 +25,6 @@ public class knapsackTopDown {
                 }
             }
         }
-
-
-        // code choice diagram
-//        if (wt[n - 1] <= W) {
-//            dp[n][W] = Math.max(value[n - 1] + dp[W - wt[n - 1]][n - 1], dp[n - 1][W]);
-//
-//        } else {
-//            dp[n][W] = dp[W][n - 1];
-//
-//        }
-//            return dp[n][W]= Math.max(value[n - 1] + zeroOneKnapsack(wt, value, W - wt[n - 1], n - 1),
-//                    zeroOneKnapsack(wt, value, W, n - 1));
-//        } else {
-//            return dp[n][W]= zeroOneKnapsack(wt, value, W, n - 1);
-//
-//        }
-
         return dp[n][W];
     }
 

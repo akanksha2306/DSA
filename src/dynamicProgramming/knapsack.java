@@ -13,7 +13,7 @@ public class knapsack {
         for (int[] row : dp)
             Arrays.fill(row, -1);
 
-        //base condition-thin of the smallest valid input
+        //base condition-think of the smallest valid input
         if (n == 0 || W == 0) {
             return 0;
         }
@@ -35,7 +35,6 @@ public class knapsack {
         int[] weight = new int[]{10, 20, 30};
         int capacity = 50;
         int n = value.length;
-
         System.out.println(zeroOneKnapsack(weight, value, capacity, n));
     }
 
