@@ -1,6 +1,6 @@
 package dynamicProgramming;
 
-public class LcsR {
+public class lcsRecursive {
 
     static int  lcs(String x, String y, int n, int m){
 

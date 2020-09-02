@@ -27,8 +27,8 @@ public class lscTopDown {
     }
 
     public static void main(String[] args) {
-        String x = "ABCDGH";
-        String y = "AEDFHR";
-        System.out.println(topDown(x,y,6,6));
+        String x = "abcde";
+        String y = " ";
+        System.out.println(topDown(x,y,5,5));
     }
 }
