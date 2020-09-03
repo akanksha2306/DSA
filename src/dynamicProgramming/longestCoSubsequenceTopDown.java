@@ -1,6 +1,6 @@
 package dynamicProgramming;
 
-public class lscTopDown {
+public class longestCoSubsequenceTopDown {
 
     static int topDown(String x, String y, int n, int m) {
 
@@ -17,9 +17,9 @@ public class lscTopDown {
         for (int i = 1; i < n + 1; i++) {
             for (int j = 1; j < m + 1; j++) {
                 if (x.charAt(i - 1) == y.charAt(j - 1)) {
-                    T[i][j] = 1+T[i - 1] [j - 1];
+                    T[i][j] = 1 + T[i - 1][j - 1];
                 } else {
-                    T[i][j] = Math.max(T[i][j - 1],T[i - 1][j]);
+                    T[i][j] = Math.max(T[i][j - 1], T[i - 1][j]);
                 }
             }
         }
@@ -29,6 +29,8 @@ public class lscTopDown {
     public static void main(String[] args) {
         String x = "abcde";
         String y = " ";
-        System.out.println(topDown(x,y,5,5));
+        System.out.println(topDown(x, y, 5, 5));
     }
+
+  
 }

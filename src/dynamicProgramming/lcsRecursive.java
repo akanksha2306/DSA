@@ -22,8 +22,11 @@ public class lcsRecursive {
     }
 
     public static void main(String[] args) {
-        String x = "ABCDGH";
-        String y = "AEDFHR";
-        System.out.println(lcs(x,y,6,6));
+        String x = "AGGTAB";
+        String y = "GXTXAYB";
+       // System.out.println(lcs(x,y,6,6));
+
+
     }
+
 }
