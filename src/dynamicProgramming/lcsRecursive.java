@@ -1,6 +1,6 @@
 package dynamicProgramming;
 
-public class LcsR {
+public class lcsRecursive {
 
     static int  lcs(String x, String y, int n, int m){
 
@@ -22,8 +22,11 @@ public class LcsR {
     }
 
     public static void main(String[] args) {
-        String x = "ABCDGH";
-        String y = "AEDFHR";
-        System.out.println(lcs(x,y,6,6));
+        String x = "AGGTAB";
+        String y = "GXTXAYB";
+       // System.out.println(lcs(x,y,6,6));
+
+
     }
+
 }
