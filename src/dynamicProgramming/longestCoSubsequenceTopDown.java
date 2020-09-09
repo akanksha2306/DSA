@@ -29,7 +29,7 @@ public class longestCoSubsequenceTopDown {
     public static void main(String[] args) {
         String x = "abcde";
         String y = " ";
-        System.out.println(topDown(x, y, 5, 5));
+        System.out.println(topDown(x, y, 5, 0));
     }
 
   

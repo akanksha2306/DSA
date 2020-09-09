@@ -2,13 +2,13 @@ package DataStructures.LinkedLists;
 
 public class LL {
 
-    Node head;
+    ListNode head;
 
     public void insertNodeAtHead(int data) {
 
         //create a newNode object
 
-        Node newNode = new Node(data);
+        ListNode newNode = new ListNode(data);
 
         newNode.setNext(this.head);
         this.head = newNode;
@@ -21,7 +21,7 @@ public class LL {
 
     public int length() {
 
-        Node current = head;
+        ListNode current = head;
         int count = 0;
 
         while (current != null) {
@@ -39,7 +39,7 @@ public class LL {
 
         String result = "{";
 
-        Node current = this.head;
+        ListNode current = this.head;
 
         while (current != null) {
             result += current.toString() + ",";

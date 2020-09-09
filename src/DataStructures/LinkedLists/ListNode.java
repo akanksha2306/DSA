@@ -1,38 +1,38 @@
 package DataStructures.LinkedLists;
 
 
-public class Node {
+public class ListNode {
 
 
-    private int data;
-    private Node next;
+    private int val;
+    private ListNode next;
 
 
-    public Node(int data) {
-        this.data = data;
+    public ListNode(int data) {
+        this.val = data;
     }
 
     public int getData() {
-        return data;
+        return val;
     }
 
 
     public void setData(int data) {
-        this.data = data;
+        this.val = data;
     }
 
-    public Node getNext() {
+    public ListNode getNext() {
         return next;
     }
 
-    public void setNext(Node next) {
+    public void setNext(ListNode next) {
         this.next = next;
     }
 
     @Override
     public String toString() {
         return "Node{" +
-                "data=" + data +
+                "data=" + val +
                 ", next=" + next +
                 '}';
     }
