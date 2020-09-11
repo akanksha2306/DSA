@@ -1,28 +1,36 @@
-package dynamicProgramming;
+package dynamicProgramming.subsetProblems;
 
 import java.util.Arrays;
 
-public class countOfSubsetSum {
+public class SubsetSum {
 
-    public static int count(int[] arr, int sum) {
+    public static boolean sumSubset(int[] arr, int sum) {
+
         int n = arr.length;
-        int[][] subset = new int[n + 1][sum + 1];
+        boolean[][] subset = new boolean[n + 1][sum + 1];
         //i= n, j = sum;
-        for (int[] row : subset)
-            Arrays.fill(row, -1);
+
+        for (boolean[] row : subset)
+            Arrays.fill(row, false);
+
+
         //when n is 0
         for (int i = 0; i < sum + 1; i++) {
-            subset[0][i] = 0;
+
+            subset[0][i] = false;
+
         }
         //when sum = 0
         for (int j = 0; j < n + 1; j++) {
-            subset[j][0] = 1;
+
+            subset[j][0] = true;
+
         }
-        //subset[0][0] = 0;
+
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= sum; j++) {
                 if (arr[i - 1] <= j) {
-                    subset[i][j] = subset[i - 1][j - arr[i - 1]] + subset[i - 1][j];
+                    subset[i][j] = subset[i-1][j - arr[i - 1]] || subset[i - 1][j];
                 } else {
                     subset[i][j] = subset[i - 1][j];
                 }
@@ -33,13 +41,11 @@ public class countOfSubsetSum {
 
     public static void main(String[] args) {
 
-        int[] arr = new int[]{1, 2, 2};
+        int[] arr = new int[]{3, 0,1 };
+        int sum = 11;
         int sizeOfArray = arr.length;
-        int sum = 1;
 
-        System.out.println(count(arr, 1));
-
+        System.out.println(sumSubset(arr, 11));
     }
-
 
 }

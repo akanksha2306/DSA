@@ -1,8 +1,8 @@
-package dynamicProgramming;
+package dynamicProgramming.subsetProblems;
 
 import java.util.Arrays;
 
-public class equalSumPartition {
+public class EqualSumPartition {
 
     public static boolean subSetSumEqualPartition(int[] arr) {
 
