@@ -19,6 +19,7 @@ public class CountOfSubsetSum {
             subset[j][0] = 1;
         }
         //subset[0][0] = 0;
+        //whenever count is ask in a problem we add all the choices, like we have done here.
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= sum; j++) {
                 if (arr[i - 1] <= j) {
