@@ -5,11 +5,12 @@ import java.util.Arrays;
 public class SubsetSum {
 
     public static boolean sumSubset(int[] arr, int sum) {
+        //-2,1,-3,4,-1,2,1,-5,4
+        //6
 
         int n = arr.length;
         boolean[][] subset = new boolean[n + 1][sum + 1];
-        //i= n, j = sum;
-
+        //i= n, j = :
         for (boolean[] row : subset)
             Arrays.fill(row, false);
 
@@ -41,7 +42,7 @@ public class SubsetSum {
 
     public static void main(String[] args) {
 
-        int[] arr = new int[]{3, 0,1 };
+        int[] arr = new int[]{3, 8,1 };
         int sum = 11;
         int sizeOfArray = arr.length;
 

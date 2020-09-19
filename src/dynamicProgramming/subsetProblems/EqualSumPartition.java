@@ -61,8 +61,8 @@ public class EqualSumPartition {
 
     public static void main(String[] args) {
 
-        int[] arr = new int[]{7,3,5,5};
-        //int sum = 11;
+        int[] arr = new int[]{7,5,5,5};
+        int sum = 11;
         int sizeOfArray = arr.length;
 
         System.out.println(subSetSumEqualPartition(arr));
