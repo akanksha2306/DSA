@@ -18,6 +18,7 @@ public class CoinChangeProblem {
         int n = coinArray.length;
         int[][] T = new int[n + 1][sum + 1];
 
+        //this is possible by empty subset.
         for (int i = 0; i < n + 1; i++) {
             T[i][0] = 1;
         }
@@ -29,7 +30,8 @@ public class CoinChangeProblem {
         for (int i = 1; i < n + 1; i++) {
             for (int j = 1; j < sum + 1; j++) {
                 if (coinArray[i - 1] <= j) {
-                    T[i][j] = T[i][j - coinArray[i - 1]] + T[i - 1][j];
+                    //T[i][j] = T[i][j - coinArray[i - 1]] + T[i - 1][j];
+                    //T[i][j] =Math.min(T[i][j - coinArray[i - 1]] , T[i - 1][j]);
                 } else {
                     T[i][j] = T[i - 1][j];
 
@@ -43,8 +45,8 @@ public class CoinChangeProblem {
 
     public static void main(String[] args) {
 
-        int[] coinArray = new int[]{1, 2, 3};
-        int sum = 4;
+        int[] coinArray = new int[]{1,2,3};
+        int sum = 5;
         System.out.println(CoinChangeProblem.ccp(coinArray, sum));
     }
 
