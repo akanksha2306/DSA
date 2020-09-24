@@ -14,7 +14,7 @@ public class CountOfSubsetSum {
         for (int i = 0; i < sum + 1; i++) {
             subset[0][i] = 0;
         }
-        //when sum = 0
+        //when sum = 0,i can make sum =0,1,3,4...., if array-size =0,how? by taking null subset.
         for (int j = 0; j < n + 1; j++) {
             subset[j][0] = 1;
         }
@@ -34,12 +34,12 @@ public class CountOfSubsetSum {
 
     public static void main(String[] args) {
 
-        int[] arr = new int[]{1, 2, 2};
+        int[] arr = new int[]{1, 2, 3,3};
         int sizeOfArray = arr.length;
-        int sum = 1;
+        int sum = 6;
         CountOfSubsetSum cs = new CountOfSubsetSum();
 
-        System.out.println(cs.count(arr, 1));
+        System.out.println(cs.count(arr, 6));
 
     }
 
