@@ -1,4 +1,4 @@
-package DataStructures.graphs;
+package DataStructures.graphs.breadthFirstSearch;
 
 public class App {
     public static void main(String[] args) {
