@@ -1,4 +1,4 @@
-package DataStructures.graphs;
+package DataStructures.graphs.breadthFirstSearch;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -6,7 +6,6 @@ import java.util.Queue;
 public class Bfs {
 
     public void traverse(Vertex root) {
-
 
         Queue<Vertex> queue = new LinkedList<>();
         //will set the root node to be visited
