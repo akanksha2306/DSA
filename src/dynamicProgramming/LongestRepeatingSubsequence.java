@@ -1,2 +1,4 @@
-package dynamicProgramming;public class LongestRepeatingSubsequence {
+package dynamicProgramming;
+
+public class LongestRepeatingSubsequence {
 }

@@ -1,2 +1,4 @@
-package sde_questions.greedy;public class MeetingInOneRoom {
+package sde_questions.greedy;
+
+public class MeetingInOneRoom {
 }
