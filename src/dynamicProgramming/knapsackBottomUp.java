@@ -1,10 +1,9 @@
 package dynamicProgramming;
 
-import java.util.Arrays;
-
-public class knapsackTopDown {
+public class knapsackBottomUp {
     public static int zeroOneKnapsack(int[] wt, int[] value, int W, int n) {
-
+//n is size of the array.
+        //whatever is changing we take that as n+1 andW+1
 
         int[][] dp = new int[n + 1][W + 1];
 

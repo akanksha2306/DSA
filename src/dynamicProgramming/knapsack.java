@@ -1,8 +1,7 @@
 package dynamicProgramming;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
-
+//https://leetcode.com/discuss/general-discussion/662866/dp-for-beginners-problems-patterns-sample-solutions
 public class knapsack {
 
     public static int zeroOneKnapsack(int[] wt, int[] value, int W, int n) {

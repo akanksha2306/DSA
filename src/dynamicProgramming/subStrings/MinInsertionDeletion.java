@@ -4,15 +4,16 @@ import dynamicProgramming.subStrings.longestCoSubsequenceTopDown;
 
 public class MinInsertionDeletion {
 
-    static void minInsertionDeletionForAtoB(String x, String y){
+    static void minInsertionDeletionForAtoB(String x, String y) {
 
         int n = x.length();//heap
         int m = y.length();//pea
 
-        int minimumInsertions= m- longestCoSubsequenceTopDown.topDown(x,y,n,m);
-        int minimumDeletions = n -longestCoSubsequenceTopDown.topDown(x,y,n,m);
-        System.out.println("minimumDeletions"+ " "+ minimumDeletions);
-        System.out.println("minimumInsertions"+" "+minimumInsertions);
+        int minimumInsertions = m - longestCoSubsequenceTopDown.topDown(x, y);
+        int minimumDeletions = n - longestCoSubsequenceTopDown.topDown(x, y);
+
+        System.out.println("minimumDeletions" + " " + minimumDeletions);
+        System.out.println("minimumInsertions" + " " + minimumInsertions);
 
     }
 
@@ -20,6 +21,6 @@ public class MinInsertionDeletion {
         String x = "heap";
         String y = "pea";
 
-        minInsertionDeletionForAtoB(x,y);
+        minInsertionDeletionForAtoB(x, y);
     }
 }

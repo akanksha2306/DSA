@@ -1,15 +1,11 @@
 package dynamicProgramming.subStrings;
 
 public class longestCommonSubstring {
-
-    //adcde
-    //advcer
-
     static int lcs(String x, String y, int n, int m) {
 
         //base condition
 
-        int [][]t = new int[n + 1][m + 1];
+        int[][] t = new int[n + 1][m + 1];
 
         for (int i = 0; i < n + 1; i++) {
             t[n][0] = 0;
@@ -18,7 +14,7 @@ public class longestCommonSubstring {
             t[0][m] = 0;
         }
 
-        int result =0;
+        int result = 0;
 //        if(n ==0 || m ==0){
 //            return 0;
 //        }
@@ -26,9 +22,9 @@ public class longestCommonSubstring {
         //choice diagram
         for (int i = 1; i < n + 1; i++) {
             for (int j = 1; j < m + 1; j++) {
-                if (x.charAt(i-1) == y.charAt(j-1)) {
+                if (x.charAt(i - 1) == y.charAt(j - 1)) {
                     t[i][j] = 1 + t[i - 1][j - 1];
-                    result = Math.max(0,t[i][j]);
+                    result = Math.max(0, t[i][j]);
                 } else {
                     t[i][j] = 0;
                 }
@@ -38,8 +34,8 @@ public class longestCommonSubstring {
     }
 
     public static void main(String[] args) {
-        String x = "GeeksforGeeks";
-        String y = "GeeksQuiz";
-        System.out.println(lcs(x,y,13,9));
+        String x = "babad";
+        String y = "dabab";
+        System.out.println(lcs(x, y, 5, 5));
     }
 }
