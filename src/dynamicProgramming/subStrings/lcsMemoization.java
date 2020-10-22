@@ -1,4 +1,4 @@
-package dynamicProgramming;
+package dynamicProgramming.subStrings;
 
 import java.util.Arrays;
 

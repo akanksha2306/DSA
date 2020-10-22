@@ -1,4 +1,6 @@
-package dynamicProgramming;
+package dynamicProgramming.subStrings;
+
+import dynamicProgramming.subStrings.longestCoSubsequenceTopDown;
 
 public class MinInsertionDeletion {
 
@@ -7,7 +9,7 @@ public class MinInsertionDeletion {
         int n = x.length();//heap
         int m = y.length();//pea
 
-        int minimumInsertions= m-longestCoSubsequenceTopDown.topDown(x,y,n,m);
+        int minimumInsertions= m- longestCoSubsequenceTopDown.topDown(x,y,n,m);
         int minimumDeletions = n -longestCoSubsequenceTopDown.topDown(x,y,n,m);
         System.out.println("minimumDeletions"+ " "+ minimumDeletions);
         System.out.println("minimumInsertions"+" "+minimumInsertions);

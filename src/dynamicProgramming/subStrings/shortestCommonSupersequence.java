@@ -1,5 +1,7 @@
-package dynamicProgramming;
+package dynamicProgramming.subStrings;
 
+
+import dynamicProgramming.subStrings.longestCoSubsequenceTopDown;
 
 public class shortestCommonSupersequence {
 //https://www.geeksforgeeks.org/shortest-common-supersequence/
@@ -8,7 +10,7 @@ public class shortestCommonSupersequence {
         int m = x.length();
         int n = y.length();
 
-        return m+n-longestCoSubsequenceTopDown.topDown(x,y,m,n);
+        return m+n- longestCoSubsequenceTopDown.topDown(x,y,m,n);
 
     }
 

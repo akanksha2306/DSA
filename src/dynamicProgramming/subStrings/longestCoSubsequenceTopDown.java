@@ -1,4 +1,4 @@
-package dynamicProgramming;
+package dynamicProgramming.subStrings;
 
 public class longestCoSubsequenceTopDown {
 
@@ -28,8 +28,8 @@ public class longestCoSubsequenceTopDown {
 
     public static void main(String[] args) {
         String x = "abcde";
-        String y = " ";
-        System.out.println(topDown(x, y, 5, 0));
+        String y = "abde";
+        System.out.println(topDown(x, y, 5, 4));
     }
 
   

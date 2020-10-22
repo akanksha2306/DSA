@@ -1,4 +1,4 @@
-package dynamicProgramming;
+package dynamicProgramming.subStrings;
 
 public class longestCommonSubstring {
 
