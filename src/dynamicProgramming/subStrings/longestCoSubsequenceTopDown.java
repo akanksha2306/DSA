@@ -1,6 +1,7 @@
-package dynamicProgramming;
+package dynamicProgramming.subStrings;
 //Subsequence - order matters, there can be gap too between the words
 //Substring - here continuation matters, there cant be discontinuity
+
 public class longestCoSubsequenceTopDown {
 
     public static int topDown(String x, String y) {
@@ -35,6 +36,4 @@ public class longestCoSubsequenceTopDown {
         String y = "abcbga";
         System.out.println(topDown(x, y));
     }
-
-  
 }

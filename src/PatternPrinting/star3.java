@@ -1,4 +1,4 @@
-package PatternMatching;
+package PatternPrinting;
 
 public class star3 {
 

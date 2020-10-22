@@ -4,6 +4,8 @@ import java.util.Arrays;
 
 public class CountOfSubsetSumWithDifference {
 
+    //same as Target Sum question
+
     public int subSetSumWithADifference(int[] arr, int difference) {
 
         //means Subset1- Subset2 = difference;

@@ -1,4 +1,4 @@
-package dynamicProgramming;
+package dynamicProgramming.subStrings;
 
 public class longestCommonSubstring {
     static int lcs(String x, String y, int n, int m) {

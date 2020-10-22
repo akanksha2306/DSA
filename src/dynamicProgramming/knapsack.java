@@ -19,8 +19,7 @@ public class knapsack {
         if (dp[n][W] != -1) {
             return dp[n][W];
         }
-        // code choice diagram
-        if (wt[n - 1] <= W) {
+         if (wt[n - 1] <= W) {
             return dp[n][W] = Math.max(value[n - 1] + zeroOneKnapsack(wt, value, W - wt[n - 1], n - 1),
                     zeroOneKnapsack(wt, value, W, n - 1));
         } else {
