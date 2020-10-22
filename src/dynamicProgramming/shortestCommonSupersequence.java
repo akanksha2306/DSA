@@ -8,7 +8,7 @@ public class shortestCommonSupersequence {
         int m = x.length();
         int n = y.length();
 
-        return m+n-longestCoSubsequenceTopDown.topDown(x,y,m,n);
+        return m+n-longestCoSubsequenceTopDown.topDown(x,y);
 
     }
 

@@ -7,8 +7,8 @@ public class MinInsertionDeletion {
         int n = x.length();//heap
         int m = y.length();//pea
 
-        int minimumInsertions= m-longestCoSubsequenceTopDown.topDown(x,y,n,m);
-        int minimumDeletions = n -longestCoSubsequenceTopDown.topDown(x,y,n,m);
+        int minimumInsertions= m-longestCoSubsequenceTopDown.topDown(x,y);
+        int minimumDeletions = n -longestCoSubsequenceTopDown.topDown(x,y);
         System.out.println("minimumDeletions"+ " "+ minimumDeletions);
         System.out.println("minimumInsertions"+" "+minimumInsertions);
 

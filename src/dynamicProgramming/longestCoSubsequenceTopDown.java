@@ -1,8 +1,12 @@
 package dynamicProgramming;
-
+//Subsequence - order matters, there can be gap too between the words
+//Substring - here continuation matters, there cant be discontinuity
 public class longestCoSubsequenceTopDown {
 
-    static int topDown(String x, String y, int n, int m) {
+    public static int topDown(String x, String y) {
+
+        int n = x.length();
+        int m = y.length();
 
         int[][] T = new int[n + 1][m + 1];
 
@@ -27,9 +31,9 @@ public class longestCoSubsequenceTopDown {
     }
 
     public static void main(String[] args) {
-        String x = "abcde";
-        String y = " ";
-        System.out.println(topDown(x, y, 5, 0));
+        String x = "agbcba";
+        String y = "abcbga";
+        System.out.println(topDown(x, y));
     }
 
   

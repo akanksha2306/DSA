@@ -3,10 +3,15 @@ package DataStructures.graphs.depthFirstSearch;
 import java.util.List;
 import java.util.Stack;
 
+/***
+ * here the rule is start exploring one vertex, then if u find new vertex, explore that, suspend the old
+ * one for now,keep exploring the new ones and once they are completed then come back to old ones nd
+ * complete them
+ */
 //we use stack data structure here
 //push the starting vertex onto the stack,  and while the last item is not empty we can pop, inorder to
-//get the last item to be inserted.we set it to be visisted and we consider all the neighbour,
-//if we havent visited that v neightbour, then we push that given v vertex onto that stack
+//get the last item to be inserted.we set it to be visited and we consider all the neighbour,
+//if we haven't visited that v neighbour, then we push that given v vertex onto that stack
 //we can also use recursion.
 public class Dfs {
 
