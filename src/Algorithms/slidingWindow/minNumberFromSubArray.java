@@ -9,7 +9,7 @@ import java.util.PriorityQueue;
  * arr OR String might be given
  * Subarray/Substring might be given
  * window size = k
- * all above 3 points are indentification of sliding window
+ * all above 3 points are identification of sliding window
  */
 public class minNumberFromSubArray {
 

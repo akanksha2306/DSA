@@ -1,6 +1,6 @@
 package dynamicProgramming.pallindromic;
 
-import dynamicProgramming.longestCoSubsequenceTopDown;
+import dynamicProgramming.subStrings.longestCoSubsequenceTopDown;
 
 public class MinimumDeleteionsToMakePalindrome {
 //min number of deletions to make it a pallindrome = min number of insertions to make it a pallindrome

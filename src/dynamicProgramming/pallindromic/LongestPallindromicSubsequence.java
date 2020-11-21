@@ -1,6 +1,6 @@
 package dynamicProgramming.pallindromic;
 
-import dynamicProgramming.longestCoSubsequenceTopDown;
+import dynamicProgramming.subStrings.longestCoSubsequenceTopDown;
 
 public class LongestPallindromicSubsequence {
     /*****

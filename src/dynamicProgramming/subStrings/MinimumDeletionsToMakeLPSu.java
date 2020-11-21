@@ -12,7 +12,7 @@ public class MinimumDeletionsToMakeLPSu  {
         y1 = y1.reverse();
         int m = y1.length();
         //string ki length minus longestCOmmonSubsequence
-        int minDeletion = n-longestCoSubsequenceTopDown.topDown(x, y1.toString(), n, m);
+        int minDeletion = n-longestCoSubsequenceTopDown.topDown(x, y1.toString());
         System.out.println(minDeletion);
         return minDeletion;
 

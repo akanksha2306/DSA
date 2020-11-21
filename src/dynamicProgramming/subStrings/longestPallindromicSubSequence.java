@@ -15,7 +15,7 @@ public class longestPallindromicSubSequence {
         // reverse StringBuilder input1
         y1 = y1.reverse();
         int m = y1.length();
-        int ans = longestCoSubsequenceTopDown.topDown(x, y1.toString(), n, m);
+        int ans = longestCoSubsequenceTopDown.topDown(x, y1.toString());
         return ans;
     }
 
