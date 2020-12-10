@@ -13,7 +13,7 @@ public class hashmap {
         hashMap.put(new Person(1, "Ram", 35, "Male"), "Working At PayPal As Developer");
         hashMap.put(new Person(2, "Siva", 45, "Male"), "Working At PayPal As Manager");
 
-        //System.out.println("%%%%%" + hashMap.get(P1));
+        System.out.println("%%%%%" + hashMap.get(new Person(1, "Ram", 35, "Male")));
 
 
 
@@ -22,9 +22,9 @@ public class hashmap {
     public static void main(String[] args) {
         hashmap hm = new hashmap();
         Person P1 = new Person(1, "Ram", 35, "Male");
-        Person P2 = new Person(1, "n", 39, "female");
+        Person P2 = new Person(1, "Ram", 35, "Male");
 
-        if(P1.equals(P2)){
+        if(P1==(P1)){
             System.out.println("Equals");
         }else
             System.out.println("Not Equals");
@@ -73,5 +73,7 @@ class Person {
     }
 
     //getters and setters
+    // if i want output as"working in paypal as developer, then i have to
+    //implement hashcode and equals method properly"
 }
 
