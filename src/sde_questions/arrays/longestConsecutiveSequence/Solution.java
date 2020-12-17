@@ -40,3 +40,4 @@ class Solution {
         System.out.println("ans is" +" "+ ans);
     }
 }
+
