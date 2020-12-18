@@ -1,4 +1,4 @@
-package sde_questions.arrays.twoSum;
+package sde_questions.Hashing.twoSum;
 
 import java.util.Arrays;
 import java.util.HashMap;

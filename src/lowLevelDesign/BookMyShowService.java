@@ -1,5 +1,6 @@
 //package lowLevelDesign;
 //
+<<<<<<< HEAD
 //import java.sql.Time;
 //import java.util.Date;
 //import java.util.List;
@@ -11,12 +12,20 @@
 //
 //    public List<Movies>getMovies(Date date, String city, String name);
 //    public List<CinemaHalls> CinemaHalls(String City);
+=======
+//import java.util.List;
+//
+//public class BookMyShow {
+//
+//    List<CinemaHalls> cinemaHallsList;
+>>>>>>> sde_problems
 //    List<Movies> moviesList;
 //    List<Cities> citiesList;
 //    List<Customers> customersList;
 //
 //    public static class CinemaHalls{
 //
+<<<<<<< HEAD
 //        int cinemalHallID;
 //        String name;
 //        LibraryManagement.Address address;
@@ -44,6 +53,12 @@
 //
 //
 //
+=======
+//
+//
+//    }
+//    public class shows{
+>>>>>>> sde_problems
 //
 //    }
 //    public static class seats{
@@ -54,7 +69,11 @@
 //        String name;
 //        String language;
 //        String type;
+<<<<<<< HEAD
 //        shows;
+=======
+//        shows s;
+>>>>>>> sde_problems
 //
 //    }
 //
@@ -70,6 +89,7 @@
 //    private class Customers {
 //    }
 //}
+<<<<<<< HEAD
 
 package lowLevelDesign;
 
@@ -114,3 +134,5 @@ public class BookMyShow {
     private class Customers {
     }
 }
+=======
+>>>>>>> sde_problems
