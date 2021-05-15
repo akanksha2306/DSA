@@ -1,4 +1,4 @@
-package sde_questions.linkedList;
+package sde_questions.linkList.intersectionOfTwoLll;
 
 import DataStructures.LinkedLists.ListNode;
 
