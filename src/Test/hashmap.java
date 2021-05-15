@@ -15,8 +15,6 @@ public class hashmap {
 
         System.out.println("%%%%%" + hashMap.get(new Person(1, "Ram", 35, "Male")));
 
-
-
     }
 
     public static void main(String[] args) {
@@ -24,7 +22,7 @@ public class hashmap {
         Person P1 = new Person(1, "Ram", 35, "Male");
         Person P2 = new Person(1, "Ram", 35, "Male");
 
-        if(P1==(P1)){
+        if(P1==(P2)){
             System.out.println("Equals");
         }else
             System.out.println("Not Equals");
@@ -41,7 +39,6 @@ public class hashmap {
     }
 
 }
-
 class Person {
     long id;
     String name;

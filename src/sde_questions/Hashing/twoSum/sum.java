@@ -43,8 +43,8 @@ public class sum {
     }
 
     public static void main(String[] args) {
-        int[] arr = new int[]{2, 3, 4, 7, 9};
-        int[] ans = two_sum(arr, 7);
+        int[] arr = new int[]{2,3,4,7,9};
+        int[] ans = two_Sum(arr, 7);
         System.out.println(Arrays.toString(ans));
 
     }

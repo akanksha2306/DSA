@@ -43,7 +43,8 @@ public class Kadanes_Algo {
 
     public static void main(String[] args) {
 
-        int[] a = {-2, -3, 4, -1, -2, 1, 5, -3};
+        int[] a = {-2, -3, 4, -1, -2,  };
+        System.out.println(a.length);
         int ans = MaximumSubArray(a);
         System.out.println("ans is" + " " + ans);
 

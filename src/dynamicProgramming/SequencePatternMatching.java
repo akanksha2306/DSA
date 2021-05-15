@@ -22,9 +22,6 @@ public class SequencePatternMatching {
         int m = t.length();
 
         int[][]T  = new int[n+1][m+1];
-
-
-
         for(int i =0; i <n+1; i++){
 
             T[n][0] = 0;

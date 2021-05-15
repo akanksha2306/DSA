@@ -5,7 +5,7 @@ import DataStructures.LinkedLists.ListNode;
 public class Solution {
 
 
-    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+    public static ListNode mergeTwoLists(ListNode l1, ListNode l2) {
 
         ListNode head = new ListNode(0);
         ListNode dummyhead = head;
@@ -39,5 +39,9 @@ public class Solution {
         }
 
         return head.next;
+    }
+
+    public static void main(String[] args) {
+
     }
 }
