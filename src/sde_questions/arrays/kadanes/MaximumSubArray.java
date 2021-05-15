@@ -7,6 +7,7 @@ public class MaximumSubArray {
         int local_max = 0;
         int global_max= Integer.MIN_VALUE;
 
+
         for(int i=1; i<arr.length; i++){
 
             local_max= Math.max(arr[i], arr[i]+local_max);
