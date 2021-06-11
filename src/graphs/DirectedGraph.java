@@ -11,7 +11,7 @@ public class DirectedGraph {
         boolean[] visited = new boolean[N];
         boolean[] dfs = new boolean[N];
         Arrays.fill(visited, false);
-        Arrays.fill(visited, false);
+        Arrays.fill(dfs, false);
         for(int i=1; i<=adj.size(); i++){
             if(!visited[i]){
                 cycle(adj,visited,dfs,i);
